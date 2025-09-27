@@ -18,7 +18,7 @@ export const config = createConfig({
     injected(),
   ],
   transports: {
-    [base.id]: http("https://base.drpc.org"),
-    [baseSepolia.id]: http("https://base-sepolia.drpc.org"),
+    [base.id]: http(""),
+    [baseSepolia.id]: http(""),
   },
 });
