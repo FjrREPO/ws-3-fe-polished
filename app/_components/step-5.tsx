@@ -23,7 +23,7 @@ export default function Step5() {
       address: USDC_ADDRESS,
       abi: erc20ABI,
       functionName: "mint",
-      args: [address!, 1000000000],
+      args: [address!, 1000e6],
     });
   };
 
@@ -41,7 +41,7 @@ export default function Step5() {
       address: VAULT_ADDRESS,
       abi: vaultABI,
       functionName: "deposit",
-      args: [1000000000, address!],
+      args: [1000e6, address!],
     });
   };
 
@@ -50,7 +50,7 @@ export default function Step5() {
       address: VAULT_ADDRESS,
       abi: vaultABI,
       functionName: "withdraw",
-      args: [1000000000, address!, address!],
+      args: [1000e6, address!, address!],
     });
   };
 

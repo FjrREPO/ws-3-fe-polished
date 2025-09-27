@@ -15,7 +15,7 @@ export default function Step4() {
     address: VAULT_ADDRESS,
     abi: vaultABI,
     functionName: "deposit",
-    args: [1000000000, address!],
+    args: [1000e6, address!],
   });
 
   const [mounted, setMounted] = React.useState(false);
