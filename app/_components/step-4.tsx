@@ -27,12 +27,12 @@ export default function Step4() {
       {isLoading ? (
         <div>Simulating...</div>
       ) : error ? (
-        <div className="bg-red-900 p-5 rounded-2xl">
+        <div className="bg-red-500 text-white dark:bg-red-900 p-5 rounded-2xl">
           <p>Deposit simulation error:</p>
           <pre className="text-xs whitespace-pre-wrap">{error.message}</pre>
         </div>
       ) : (
-        <div className="bg-green-900 p-5 rounded-2xl max-w-80">
+        <div className="bg-green-500 dark:bg-green-900 p-5 rounded-2xl max-w-80">
           <p>Deposit simulation successful! You can proceed to deposit.</p>
         </div>
       )}
